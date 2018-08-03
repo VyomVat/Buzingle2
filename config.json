@@ -1,0 +1,30 @@
+{
+	
+	"WW":"825",
+	"HH":"500",
+	"LL":"50",
+	"TT":"50",
+	
+	"pics":
+	[
+		{ "id": "1", "thumb": "frog.png", "main": "frog9.gif" },
+		{ "id": "2", "thumb": "monkey.png", "main": "monkey.png" },
+		{ "id": "3", "thumb": "snake.png", "main": "snake.png" }
+	],
+	"sprites":
+	[
+		{ "id": "1", "thumb": "frog9.gif", "main": "frog9-sheet3.gif", "jw":50, "jh":30, "jc":15 },
+		{ "id": "2", "thumb": "monkey.gif", "main": "monkey_sprite.gif",  "jw":125, "jh":143, "jc":8 },
+		{ "id": "3", "thumb": "snake.gif", "main": "snake_sheet.gif",  "jw":135, "jh":66, "jc":8 },
+		{ "id": "4", "thumb": "frog-catching-bug.gif", "main": "frog_fly_sheet.gif",  "jw":110, "jh":75, "jc":9 }
+	],
+	"sounds":
+	[
+		{ "id": "1", "name": "Gas", "main": "gas.mp3" },
+		{ "id": "2", "name": "Blow", "main": "blow.wav" },
+		{ "id": "3", "name": "Snort", "main": "snort.wav" },
+		{ "id": "4", "name": "Snore", "main": "snore.mp3" },
+		{ "id": "5", "name": "Laugh", "main": "Laugh.wav" }
+	]
+	
+}
