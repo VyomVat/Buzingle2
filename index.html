@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+    
+    <link href="CSS/joko.css" rel="stylesheet" />
+    <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
+    <script type="text/JavaScript" src="//cdn.pubnub.com/pubnub.min.js"></script>
+    <script type="text/JavaScript" src="js/raf.js"></script>
+    <script type="text/JavaScript" src="js/joko.js"></script>
+    <script type="text/JavaScript" src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="header">            
+            <img src="img/bZZ-LOGO.png" />
+        </div>
+        <div id="actionBar">
+            <div class="container">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1" onclick="setMode(1);"><img src="img/Pencil-icon.png" style="width:20px; height:20px" alt="Scribble something"></li>
+                    <li class="tab-link" data-tab="tab-2" onclick="setMode(2,picJoket);"><img src="img/stamp-icon.jpg" style="width:20px; height:20px" alt="Stamp an image"></li>
+                    <li class="tab-link" data-tab="tab-3" onclick="setMode(3,spriteJoket,JW,JH,JCNT);"><img src="img/animate-icon.jpg" style="width:20px; height:20px" alt="Animate a sprite"></li>
+                    <li class="tab-link" data-tab="tab-4" onclick="setMode(4,soundJocket);"><img src="img/sound-icon.png" style="width:20px; height:20px" alt="Make a sound"></li>
+                    <li class="tab-link" data-tab="tab-5" onclick="setMode(5);"><img src="img/chat-icon.jpg" style="width:20px; height:20px" alt="Comment"></li>
+                     				<li class="tab-link" data-tab="tab-6">Source</li> 
+                    <li class="" style="" onclick="clearJoko()"><img src="img/clear-icon.png" style="width:20px; height:20px" alt="Clear"></li>
+                    <li class="tab-link" data-tab="tab-6">
+                        <input type="button" id="btnPlay1" value="Load" onclick="LoadVideo()" />
+                    </li>
+                    <li class="" style="" onclick="">
+                        <input type="button" id="btnPlay2" value="play" onclick="startVideo()" />
+                        <input type="button" id="btnPlay3" value=" || " onclick="pauseVideo()" />
+                        <input type="button" id="btnPlay4" value="stop" onclick="stopVideo()" />
+                        <input type="button" id="btnPlay5" value="<<" onclick="rewindVideo()" />
+                        <input type="button" id="btnPlay6" value=">>" onclick="forwardVideo()" />
+                        <input type="button" id="btnPlay1" value="Record" onclick="RecordVideo()" />
+                    </li>
+                    <li class="" style="" onclick="">
+                        <input type="button" id="btnShow1" value="Start Show" onclick="startVideo()" />
+                        <input type="button" id="btnShow2" value="Audience" onclick="pauseVideo()" />
+                        <input type="button" id="btnShow3" value="Invite" onclick="stopVideo()" />
+                        <input type="button" id="btnPlay4" value="Exit Show" onclick="rewindVideo()" />
+                        <input type="button" id="btnPlay4" value="Login/Register" onclick="login()" />
+                    </li>
+                </ul>
+                <div id="tab-1" class="tab-content current">
+                    <div id='content' style="display:table;">
+                        <div id='div-0' class="" style="">Pick a color&nbsp;</div>
+                        <div id='div-1' class="pickDiv" style="background:red;" onclick="setMode(1,'#FF0000')"></div>
+                        <div id='div-2' class="pickDiv" style="background:blue;" onclick="setMode(1,'#0000CC')"></div>
+                        <div id='div-3' class="pickDiv" style="background:green;" onclick="setMode(1,'#33CC33')"></div>
+                        <div id='div-4' class="pickDiv" style="background:black;" onclick="setMode(1,'#000000')"></div>
+                        <div id='div-5' class="pickDiv" style="background:white;" onclick="setMode(1,'#FFFFFF')"></div>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-content">
+                    <div id='picList' style="display:table;">
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-content">
+                    <div id='spriteList' style="display:table;">
+                    </div>
+                </div>
+                <div id="tab-4" class="tab-content">
+                    <div id='soundList' style="display:table;">
+                    </div>
+                </div>
+                <div id="tab-5" class="tab-content">
+                    <input type="text" id="txtComment" placeholder="Enter your comment" style="width:100%" />
+                </div>
+                <div id="tab-6" class="tab-content">
+                    <input type="text" id="txtURL" style="width:90%" placeholder="Enter You tube Video URL" />
+                    <input type="button" id="btnURL" value="Load" onclick="loadURL();" />
+                </div>
+            </div>
+        </div>
+        <div id="viewPort">
+            <iframe id="jokoFrame" showinfo=0 rel=0 controls=0 type="text/html"
+                    src="https://www.youtube.com/embed/48lDzD6JNJc?enablejsapi=1" frameborder="0"></iframe>
+            
+            <canvas id="myCanvas" ondblclick="clearJoko()"></canvas>
+        </div>
+        <div id="footer">
+            Copyrights Arcken LLC (2015-2025)
+        </div>
+    </div>
+</body>
+</html>
+
