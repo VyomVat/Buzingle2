@@ -1,0 +1,93 @@
+
+.wrapper {
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+}
+
+
+body {margin:0}
+
+#header {
+	background-color:red;
+	height:70px
+}
+#actionBar {
+	background-color:lightgray;
+	height:40px
+}
+#viewPort {
+	background-color:black;
+	flex:1;
+	position: relative;
+}
+#footer {
+	background-color:red;
+	color:white;
+	height:30px;
+	font-size:smaller;
+}
+#jokoFrame {
+	pointer-events: none;
+	height: 100%;
+    width: 100%;
+	position: absolute;
+}
+
+#myCanvas {
+	cursor: crosshair;
+	opacity: 0.5;
+	position: absolute;
+	height: 100%;
+    width: 100%;
+}
+
+
+.container {
+	width: 100%;
+}
+
+ul.tabs {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.tabs li {
+	background: none;
+	color: #808080;
+	display: inline-block;
+	padding: 10px 10px;
+	cursor: pointer;
+}
+
+ul.tabs li.current {
+	background: #999999;
+	color: #222;
+}
+
+.tab-content {
+	display: none;
+	background: #999999;
+	padding: 10px;
+	position:fixed;
+	z-index:10;
+	width:100%;
+}
+
+.tab-content.current {
+	display: inherit;
+}
+
+.pickDiv {
+	display: table-cell;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	border:solid;
+	border-width:1px;
+	border-color:#999999;
+	text-align:center;
+	vertical-align:middle;
+	font-size:12px;
+}
