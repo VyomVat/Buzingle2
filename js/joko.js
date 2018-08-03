@@ -110,6 +110,7 @@ window.onload = function() {
 	});
 
 	// Mouse Event Handlers
+	/*
 	if (myCanvas) {
 		var isDown = false;
 		var canvasX, canvasY;
@@ -225,6 +226,7 @@ window.onload = function() {
 
 		});
 	}
+	*/
 
 	// Touch Events Handlers
 	draw = {
@@ -265,9 +267,9 @@ window.onload = function() {
 	};
 
 	// Touch Events
-	//myCanvas.addEventListener('touchstart', draw.start, false);
-	//myCanvas.addEventListener('touchend', draw.end, false);
-	//myCanvas.addEventListener('touchmove', draw.move, false);
+	myCanvas.addEventListener('touchstart', draw.start, false);
+	myCanvas.addEventListener('touchend', draw.end, false);
+	myCanvas.addEventListener('touchmove', draw.move, false);
 
 	// Disable Page Move
 	document.body.addEventListener('touchmove', function(evt) {
