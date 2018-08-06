@@ -110,7 +110,6 @@ window.onload = function() {
 	});
 
 	// Mouse Event Handlers
-	/*
 	if (myCanvas) {
 		var isDown = false;
 		var canvasX, canvasY;
@@ -226,7 +225,7 @@ window.onload = function() {
 
 		});
 	}
-	*/
+	
 
 	// Touch Events Handlers
 	draw = {
