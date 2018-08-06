@@ -148,9 +148,7 @@ window.onload = function() {
 			canvasX = e.pageX - myCanvas.offsetLeft;
 			canvasY = e.pageY - myCanvas.offsetTop - 110;
 			if (mode == 2) {
-				/* 				canvasX = e.pageX - myCanvas.offsetLeft;
-				canvasY = e.pageY - myCanvas.offsetTop; */
-
+				
 				var imageObj = new Image();
 				imageObj.onload = function() {
 					ctx.drawImage(imageObj, canvasX, canvasY);
@@ -170,9 +168,6 @@ window.onload = function() {
 			}
 
 			if (mode == 3) {
-
-				/* 				canvasX = e.pageX - myCanvas.offsetLeft;
-				canvasY = e.pageY - myCanvas.offsetTop; */
 
 				var spriteObj = new Image();
 				spriteObj.onload = function() {
@@ -207,8 +202,6 @@ window.onload = function() {
 				});
 			}
 			if (mode == 5) {
-				/* 				canvasX = e.pageX - myCanvas.offsetLeft;
-				canvasY = e.pageY - myCanvas.offsetTop -  110; */
 				var txt = $("#txtComment").val();
 				ctx.font = "bold 22px sans-serif";
 				ctx.fillText(txt, canvasX, canvasY);
@@ -237,6 +230,7 @@ window.onload = function() {
 				evt.touches[0].pageY);
 
 			this.started = true;
+      
 
 		},
 		move: function(evt) {
